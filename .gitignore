@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.idea/
+.venv/
+venv/
+temp_window.png
+aporte/resultados/
