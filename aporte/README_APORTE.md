@@ -16,6 +16,7 @@ métricas para comparar todo bajo las mismas condiciones.
 | `aporte/metricas.py` | — | IoU, Dice, exactitud y tiempo |
 | `aporte/benchmark.py` | 6 | Corre 6 métodos × 3 escenarios y genera tabla, CSV y figuras |
 | `aporte/comparar_parches.py` | — | Verifica que las mejoras al código original dan el mismo resultado y mide la aceleración |
+| `aporte/app.py` | — | Interfaz PyQt que une todos los módulos y muestra qué hacía el repo antes y qué agrega el aporte |
 
 ### Mejoras al código original
 
@@ -31,6 +32,7 @@ métricas para comparar todo bajo las mismas condiciones.
 ```bash
 pip install -r requirements.txt
 
+python -m aporte.app                  # interfaz unificada: antes vs. después, todos los módulos
 python -m aporte.benchmark            # 6 métodos × 3 escenarios con métricas
 python -m aporte.comparar_parches     # antes vs. después de las mejoras
 python -m aporte.discontinuidades     # puntos, líneas y bordes
